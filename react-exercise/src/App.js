@@ -1,16 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { Component } from 'react';
+import BasicInfo from './BasicInfo'
 
-class App extends Component() {
+class App extends Component {
 
   // Easy Challenge
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     person: {}
-  //   }
-  // }
+  constructor(props) {
+    super(props)
+    this.state = {
+      person: {
+        name: "Carlo",
+        number: 7049571252,
+        dob: '01-17-1997'
+      }
+    }
+  }
 
   render() {
     return (
@@ -20,6 +25,10 @@ class App extends Component() {
       <p>Number: 7049571252</p>
       <p>DOB: 01/17/1997</p> */}
 
+      <BasicInfo 
+      name={this.state.person.name}
+      number={this.state.person.number}
+      dob={this.state.person.dob}/>
 
       </div>
     );
