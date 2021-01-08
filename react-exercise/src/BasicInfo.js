@@ -1,8 +1,9 @@
 import React from 'react'
+import "./App.css"
 
 const basicInfo = (props) => {
     return (
-        <div>
+        <div className='container'>
             <p>Name: {props.name}</p>
             <p>Number: {props.number}</p>
             <p>DOB: {props.dob}</p>
